@@ -1,0 +1,12 @@
+<h1>this is the index</h1>
+
+<% @tasks.each do |task| %>
+  <li><%= link_to task.title, task_path(task) %></li>
+  <p><%= "#{task.completed}" %></p>
+  <p><%=  "#{task.details}(this should be a hover)" %></p>
+<% end %>
+
+<br>
+
+
+<p><%= link_to 'Create a new task', new_task_path %></p>

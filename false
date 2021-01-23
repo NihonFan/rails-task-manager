@@ -1,0 +1,6 @@
+      invoke  active_record
+      remove    db/migrate/20210123022607_create_tasks.rb
+      remove    app/models/task.rb
+      invoke    test_unit
+      remove      test/models/task_test.rb
+      remove      test/fixtures/tasks.yml
